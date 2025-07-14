@@ -1,4 +1,17 @@
 services:
+  db:
+    image: mongo
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: password
+    volumes:
+      - dbdata:/data/db
+    networks:
+      - app-network
+    ports:
+      - 27017:27017
+    restart: always
+
   app:
     build:
       context: .
@@ -13,19 +26,6 @@ services:
       - db
     networks:
       - app-network
-
-  db:
-    image: mongo
-    environment:
-      MONGO_INITDB_ROOT_USERNAME: root
-      MONGO_INITDB_ROOT_PASSWORD: password
-    volumes:
-      - dbdata:/data/db
-    networks:
-      - app-network
-    ports:
-      - 27017:27017
-    restart: always
 
 networks:
   app-network:
