@@ -22,11 +22,14 @@ Implementé la solución de la siguiente manera:
 
 
 ## Evidencias
-- **Logs de la Aplicación:** 
+- **Logs de la Aplicación:**
+
 ![evidencia1](./evidencia/Captura%20de%20pantalla%202025-07-14%20a%20las%2022.33.34.png)
 - **Resultados en navegador** 
+
 ![evidencia2](./evidencia/Captura%20de%20pantalla%202025-07-14%20a%20las%2023.05.05.png)
 - **Terminal** 
+
 ![evidencia3](./evidencia/Captura%20de%20pantalla%202025-07-14%20a%20las%2023.08.25.png)
 
 ## Diagrama
