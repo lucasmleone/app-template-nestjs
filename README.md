@@ -14,11 +14,11 @@ Implementé la solución de la siguiente manera:
 1. Verifica que tienes instalados Docker y Docker Compose.
 2. Ubícate en la carpeta donde se encuentra `docker-compose.yaml`.
 3. Ejecuta el siguiente comando para construir y levantar los contenedores de forma desatendida:
-   - docker-compose up -d --build
+   - docker compose up -d --build
 4. La aplicación se expone en el puerto 3000 (mapeado desde el contenedor al host), así que podrás acceder a ella mediante:
    - http://localhost:3000
 5. Para revisar los logs y confirmar la conexión a MongoDB, puedes ejecutar:
-   - docker-compose logs app
+   - docker compose logs app
 
 
 ## Evidencias
