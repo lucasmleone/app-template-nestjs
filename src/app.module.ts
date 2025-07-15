@@ -5,7 +5,12 @@ import { MongooseModule } from '@nestjs/mongoose';
 
 @Module({
   imports: [
-    MongooseModule.forRoot(process.env.MONGO_URL),
+    MongooseModule.forRoot(process.env.MONGO_URL,{
+      connectionFactory: (connection) => {
+        console.log('✅ Conectado correctamente a Mongo desde Nest');
+        return connection;
+      },
+    }),
   ],
   controllers: [AppController],
   providers: [AppService],
