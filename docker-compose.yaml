@@ -1,6 +1,6 @@
 services:
   db:
-    image: lucasmleone/app-template-nestjs
+    image: mongo
     environment:
       MONGO_INITDB_ROOT_USERNAME: root
       MONGO_INITDB_ROOT_PASSWORD: password
@@ -13,8 +13,7 @@ services:
     restart: always
 
   app:
-    build:
-    image: Dockerfile
+    image: lucasmleone/app-template-nestjs
     ports:
       - 3000:3000
     environment:
